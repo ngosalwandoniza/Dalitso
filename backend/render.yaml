@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: dalisto
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn Dalisto.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: Dalisto.settings
+      - key: django-insecure-j!^0=0bvi-8&+7e(a%rz55tv+iy*p55xz9o3ne!m3==v573!4v
+      - key: ALLOWED_HOSTS
+        value: dalisto.onrender.com
