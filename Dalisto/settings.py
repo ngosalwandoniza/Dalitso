@@ -27,10 +27,12 @@ SECRET_KEY = 'django-insecure-j!^0=0bvi-8&+7e(a%rz55tv+iy*p55xz9o3ne!m3==v573!4v
 DEBUG = False
 
 ALLOWED_HOSTS = [
-'dalitso-talk-finance.herokuapp.com', 
-'localhost', 
-'127.0.0.1',
+    'dalitso-talk-finance.herokuapp.com',
+    'dalitso-talk-finance-84365375812c.herokuapp.com',
+    'localhost',  # for local dev
+    '127.0.0.1',  # for local dev
 ]
+
 
 
 
