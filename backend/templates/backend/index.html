@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalitso Talks Finance - Finance Made Simple. Impact Made Possible.</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-circle">
+                    <strong>D</strong>
+                </div>
+                <div class="logo-text">
+                    <div class="logo-main">Dalitso</div>
+                    <div class="logo-sub">TALKS FINANCE</div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="/articles/">Articles</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-subtitle">Finance Made Simple</div>
+            <h1>Dalitso Talks Finance</h1>
+            <p class="subtitle">Finance Made Simple. Impact Made Possible. Your go-to space for practical financial insights, bold ideas, and breakthrough strategies.</p>
+            <a href="#services" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-image slide-in-left">
+                    <img src="{% static 'images/dali3.jpg' %}">
+                </div>
+                <div class="about-text slide-in-right">
+                    <h3>Meet Dalitso Banda</h3>
+                    <p>I'm a finance strategist and venture capital investor with a passion for simplifying money and amplifying impact.</p>
+                    <p>I focus on giving students, startups, and small businesses the clarity they need to understand finances, and the capital they need to grow.</p>
+                    <p>Dalitso Talks Finance was born from a desire to close the gap between ideas and execution. I believe money is not just a tool — it's a multiplier of purpose.</p>
+                    <p>Through my work as an investor, I back bold ideas and help shape them into scalable ventures.</p>
+                    <div class="skills">
+                        <span class="skill-tag" data-skill="venture-capital">Venture Capital</span>
+                        <span class="skill-tag" data-skill="financial-strategy">Financial Strategy</span>
+                        <span class="skill-tag" data-skill="business-investment">Business Investment</span>
+                        <span class="skill-tag" data-skill="financial-education">Financial Education</span>
+                        <span class="skill-tag" data-skill="startup-mentorship">Startup Mentorship</span>
+                        <span class="skill-tag" data-skill="public-speaking">Public Speaking</span>
+                    </div>
+                    
+                    <!-- Skill Modal -->
+                    <div id="skillModal" class="skill-modal">
+                        <div class="skill-modal-content">
+                            <span class="skill-modal-close">&times;</span>
+                            <h3 id="skillModalTitle">Skill Details</h3>
+                            <div id="skillModalContent">
+                                <p>Click on any skill tag above to learn more about how I can help you in the Zambian context.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title fade-in">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-item fade-in">
+                    <div class="service-icon">💰</div>
+                    <h4>Venture Capital & Business Investment</h4>
+                    <p>I fund promising startups and entrepreneurs who show clear vision, structure, and potential for long-term growth. If your business needs more than advice — it needs capital and mentorship — let's talk.</p>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon">🎤</div>
+                    <h4>Financial Speaking Engagements</h4>
+                    <p>Book me to speak at your school, company, church, or organization on practical financial strategies, student finance, entrepreneurship, and mindset growth.</p>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon">💡</div>
+                    <h4>One-on-One Consultations</h4>
+                    <p>Need help launching a business or understanding your finances? I'll help you make sense of your numbers, plan your financial path, and grow your business with confidence.</p>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon">📊</div>
+                    <h4>Pitch & Business Model Reviews</h4>
+                    <p>Preparing for investors or competitions? I'll help you refine your pitch, structure your business model, and communicate with clarity.</p>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon">🎯</div>
+                    <h4>Workshops & Trainings</h4>
+                    <p>From student budgeting to capital planning, I run sessions designed to shift mindsets, build competence, and drive tangible results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2 class="section-title fade-in">Latest Insights</h2>
+            <div class="articles-grid">
+                <div class="article-item fade-in">
+                    <div class="article-image">
+                        [Facebook Post 1]
+                    </div>
+                    <div class="article-content">
+                        <h4>Finance Without Capital?</h4>
+                        <p>Some of the biggest moves are made without money — just models and execution. I break down how strategy can replace startup capital.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="article-item fade-in">
+                    <div class="article-image">
+                        [Facebook Post 2]
+                    </div>
+                    <div class="article-content">
+                        <h4>Investable vs Interesting</h4>
+                        <p>Not all good ideas get funding. In this post, I explain what investors look for — and how to position your startup for serious attention.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="article-item fade-in">
+                    <div class="article-image">
+                        [Facebook Post 3]
+                    </div>
+                    <div class="article-content">
+                        <h4>How Tomatoes Teach Pricing Power</h4>
+                        <p>Even in local markets, strategy wins. See how vendors use turnover and margins to beat price wars — and how you can too.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Work Highlights</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in">
+                    <h4>✅ Venture Fund Founder</h4>
+                    <p>Backed early-stage startups in Zambia with capital and mentorship, focusing on scalable ventures with clear growth potential.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Startups Funded</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">ZMW 10000</div>
+                            <div class="stat-label">Capital Deployed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <h4>✅ Featured Speaker</h4>
+                    <p>Delivered keynotes and financial talks at universities, corporate events, and entrepreneurship conferences across Zambia.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Speaking Events</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">4000</div>
+                            <div class="stat-label">People Reached</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <h4>✅ Financial Literacy for Students</h4>
+                    <p>Educated over 400+ students on financial literacy, budgeting, and entrepreneurship at universities and educational institutions.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat">
+                            <div class="stat-number">400+</div>
+                            <div class="stat-label">Students Trained</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Institutions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <h4>✅ Founder of Incepta Venture Hub</h4>
+                    <p>A launchpad where entrepreneurs pitch, learn, and grow. Supporting 10+ small businesses with strategic pricing, business model development, and growth planning.</p>
+                    <div class="portfolio-stats">
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Businesses Supported</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">85%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">What People Are Saying</h2>
+            <div class="testimonials-slider">
+                <div class="testimonials-container">
+                    <div class="testimonial-item fade-in active">
+                        <div class="testimonial-text">
+                            Dalitso helped me turn my idea into a fully operating business. His clarity, structure, and belief in my potential gave me the push I needed.
+                        </div>
+                        <div class="testimonial-author">Chipo M.</div>
+                        <div class="testimonial-role">Startup Founder</div>
+                    </div>
+                    <div class="testimonial-item fade-in">
+                        <div class="testimonial-text">
+                            The workshop Dalitso delivered changed how our students think about money. It wasn't just theory — it was practical, empowering, and transformational.
+                        </div>
+                        <div class="testimonial-author">Mr. Lungu</div>
+                        <div class="testimonial-role">Educator at UNZA</div>
+                    </div>
+                    <div class="testimonial-item fade-in">
+                        <div class="testimonial-text">
+                            Pitching to investors was scary until I worked with Dalitso. He helped me simplify my message and focus on what truly matters. We secured funding two months later.
+                        </div>
+                        <div class="testimonial-author">Tawanda K.</div>
+                        <div class="testimonial-role">Tech Entrepreneur</div>
+                    </div>
+                    <div class="testimonial-item fade-in">
+                        <div class="testimonial-text">
+                            Dalitso doesn't just teach finance — he lives it. His investment in our business came with mentorship, strategy, and a long-term partnership mindset.
+                        </div>
+                        <div class="testimonial-author">Mutale B.</div>
+                        <div class="testimonial-role">Co-Founder at ZedGrow</div>
+                    </div>
+                    <div class="testimonial-item fade-in">
+                        <div class="testimonial-text">
+                            I never thought I'd understand budgeting, but after one session with Dalitso, I felt in control of my finances for the first time.
+                        </div>
+                        <div class="testimonial-author">Lisa N.</div>
+                        <div class="testimonial-role">University Student</div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- incEPTA Section -->
+    <section id="incepta" class="incepta">
+        <div class="container">
+            <div class="incepta-content">
+                <div class="incepta-image slide-in-left">
+                    <img src="{% static 'images/dali4.jpg' %}" alt="incEPTA Research Collective">
+                </div>
+                <div class="incepta-text slide-in-right">
+                    <h2 class="section-title">🔬 What is incEPTA?</h2>
+                    <p class="incepta-intro">incEPTA stands for <strong>Innovative and Collaborative Emerging Projects in Technology and Academia</strong>. It is a dynamic, student-led research collective founded in 2025 with one clear mission:</p>
+                    
+                    <blockquote class="incepta-mission">
+                        🧠 "To empower students to become solution creators, not just knowledge consumers."
+                    </blockquote>
+                    
+                    <p>At incEPTA, we believe real change starts with student curiosity. Our platform brings together undergraduate and postgraduate students across disciplines to explore powerful ideas, solve real-world challenges, and build impactful projects — without waiting for permission or funding.</p>
+                    
+                    <div class="incepta-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌟</span>
+                            <h4>Student-Conceived. Student-Led.</h4>
+                            <p>All our projects begin with student ideas — and are carried forward by the students themselves with expert guidance.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🚀</span>
+                            <h4>Open, Inclusive Innovation.</h4>
+                            <p>Whether you're in tech, health, education, business, or the arts — your ideas are welcome.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📚</span>
+                            <h4>Beyond the Classroom.</h4>
+                            <p>We turn research into action — through challenges, experiments, collaborations, and publications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="incepta-values">
+                        <h3>🚀 Our Core Values</h3>
+                        <ul>
+                            <li><strong>Empowerment through Knowledge:</strong> Every student can drive meaningful change — with the right tools and a curious mind.</li>
+                            <li><strong>Interdisciplinarity:</strong> Great ideas come when fields collide — we unite coders, scientists, artists, and analysts.</li>
+                            <li><strong>Integrity & Ethics:</strong> Research should be honest, responsible, and community-focused.</li>
+                            <li><strong>Community-Driven:</strong> We grow by building each other up — through shared responsibility and peer mentorship.</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="/articles/incepta/" class="incepta-read-more">Read More About incEPTA →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Showcase Section -->
+    <section id="images" class="image-showcase">
+        <div class="container">
+            <h2 class="section-title fade-in">Gallery</h2>
+            <div class="gallery-slider">
+                <div class="gallery-container">
+                    <div class="gallery-item active">
+                        <img src="{% static 'images/dali1.jpg' %}" alt="Dalitso Banda">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{% static 'images/dali2.jpg' %}" alt="Dalitso Banda">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{% static 'images/dali3.jpg' %}" alt="Dalitso Banda">
+                    </div>
+                </div>
+                <div class="gallery-dots">
+                    <span class="gallery-dot active"></span>
+                    <span class="gallery-dot"></span>
+                    <span class="gallery-dot"></span>
+                </div>
+                <button class="gallery-nav gallery-prev">‹</button>
+                <button class="gallery-nav gallery-next">›</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="send-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="social-media">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/itxhook.jaysenior" target="_blank" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://tiktok.com/@dalitsofinance" target="_blank" class="social-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.me/260976427736" target="_blank" class="social-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="contact-info-footer">
+                            <p><a href="tel:+260976427736"><i class="fas fa-phone"></i> +260 976 427736</a></p>
+                            <p><a href="mailto:consultinceptarg@gmail.com"><i class="fas fa-envelope"></i> consultinceptarg@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2025 Dalitso Talks Finance. All rights reserved.</p>
+                    <p class="developer-credit">Developed by <a href="https://www.facebook.com/ngosa.lwando.niza.malekani" target="_blank">IMPIY Technologies</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}">    
+    </script>
+
+</body>
+</html> 
